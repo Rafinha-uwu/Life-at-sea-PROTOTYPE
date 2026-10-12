@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f313c9761c843f4bab93bbe76997793, type: 3}
+  m_Name: PuzzleRatings
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleRatings
+  bestColor: {r: 0.9559748, g: 0.71168953, b: 0.021043312, a: 1}
+  goodColor: {r: 0.7496736, g: 0.7930758, b: 0.836478, a: 1}
+  slowColor: {r: 0.72, g: 0.45, b: 0.2, a: 1}
+  puzzles:
+  - label: L1 - Climb
+    bestUnder: 60
+    goodUnder: 120
+  - label: L2 - Astrolabe
+    bestUnder: 60
+    goodUnder: 120
+  - label: L3 - Cannon
+    bestUnder: 240
+    goodUnder: 360
+  - label: L4 - Spices
+    bestUnder: 120
+    goodUnder: 240

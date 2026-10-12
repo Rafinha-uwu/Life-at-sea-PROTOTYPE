@@ -254,10 +254,15 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             if (m_TeleportInteractor != null)
                 m_TeleportInteractor.gameObject.SetActive(true);
 
-            if (m_RayInteractor != null)
+            // NAU: never switch off an interactor that is holding something.
+            // Deactivating it cancels its selection, so anything grabbed from a
+            // distance was dropped the moment the player started to teleport.
+            // The stock sample only spared near grabs.
+            if (m_RayInteractor != null && !m_RayInteractor.hasSelection)
                 m_RayInteractor.gameObject.SetActive(false);
 
-            if (m_NearFarInteractor != null && m_NearFarInteractor.selectionRegion.Value != NearFarInteractor.Region.Near)
+            if (m_NearFarInteractor != null && !m_NearFarInteractor.hasSelection &&
+                m_NearFarInteractor.selectionRegion.Value != NearFarInteractor.Region.Near)
                 m_NearFarInteractor.gameObject.SetActive(false);
 
             m_RayInteractorChanged?.Invoke(m_TeleportInteractor);

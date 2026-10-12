@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 8868c931987677441b12526fce284a92
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable:
+  - first:
+      74: 1896259134424795067
+    second: root|Pirate_04_Combat_01
+  - first:
+      74: -1538756569591828445
+    second: root|Pirate_04_Combat_02
+  - first:
+      74: 5848712620387363201
+    second: root|Pirate_04_Combat_03
+  - first:
+      74: -3875945936925405026
+    second: root|Pirate_04_Combat_04
+  - first:
+      74: 6957182919896820183
+    second: root|Pirate_04_Combat_05
+  - first:
+      74: 2211561697907208557
+    second: root|Pirate_04_Combat_06
+  - first:
+      74: 965425824938443371
+    second: root|Pirate_04_Combat_07
+  - first:
+      74: -1778153073184320046
+    second: root|Pirate_04_Combat_08
+  - first:
+      74: 8581316735073703030
+    second: root|Pirate_04_Combat_Edle
+  - first:
+      74: 288621751807101468
+    second: root|Pirate_04_Dying_01
+  - first:
+      74: -7387197707128229070
+    second: root|Pirate_04_Dying_02
+  - first:
+      74: -8585737567166842847
+    second: root|Pirate_04_GetHit_01
+  - first:
+      74: 8403515739460018852
+    second: root|Pirate_04_GetHit_02
+  - first:
+      74: 1975311291582909922
+    second: root|Pirate_04_Idle_01
+  - first:
+      74: -9159249901070804484
+    second: root|Pirate_04_Idle_02
+  - first:
+      74: -6854412680823074707
+    second: root|Pirate_04_Idle_03
+  - first:
+      74: -8340460766154918894
+    second: root|Pirate_04_Idle_04
+  - first:
+      74: -3974856309026962510
+    second: root|Pirate_04_Jump
+  - first:
+      74: -3095550302299235648
+    second: root|Pirate_04_Run_01
+  - first:
+      74: 1467224772074497337
+    second: root|Pirate_04_Run_02
+  - first:
+      74: -6606288254781114336
+    second: root|Pirate_04_Run_03
+  - first:
+      74: -6855652599361502349
+    second: root|Pirate_04_Walk_01
+  - first:
+      74: 5326129776873385803
+    second: root|Pirate_04_Walk_02
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 0
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

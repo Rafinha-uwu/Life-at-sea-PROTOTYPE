@@ -1,8 +1,9 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable))]
+[RequireComponent(typeof(XRGrabInteractable))]
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
 public class ReturnToOriginOnRelease : MonoBehaviour
@@ -11,13 +12,14 @@ public class ReturnToOriginOnRelease : MonoBehaviour
     public float returnDelay = 2f;
     public float returnDuration = 0.75f;
 
-    [Tooltip("Controls how the object moves back")]
     public AnimationCurve returnCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
-    private Vector3 originalPosition;
-    private Quaternion originalRotation;
+    // Local: rides the ship
+    private Transform home;
+    private Vector3 homeLocalPosition;
+    private Quaternion homeLocalRotation;
 
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
+    private XRGrabInteractable grabInteractable;
     private Rigidbody rb;
     private Collider col;
 
@@ -25,12 +27,28 @@ public class ReturnToOriginOnRelease : MonoBehaviour
 
     void Awake()
     {
-        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+        grabInteractable = GetComponent<XRGrabInteractable>();
         rb = GetComponent<Rigidbody>();
         col = GetComponent<Collider>();
 
-        originalPosition = transform.position;
-        originalRotation = transform.rotation;
+        CaptureHome();
+    }
+
+    void Start()
+    {
+        // A spawned copy is parented onto the ship right after Instantiate,
+        // which is after Awake - so re-read the home pose once it is hanging
+        // in the right place, or it would return to a fixed world point while
+        // the deck rocks away from under it.
+        if (home == null)
+            CaptureHome();
+    }
+
+    private void CaptureHome()
+    {
+        home = transform.parent;
+        homeLocalPosition = transform.localPosition;
+        homeLocalRotation = transform.localRotation;
     }
 
     void OnEnable()
@@ -43,15 +61,14 @@ public class ReturnToOriginOnRelease : MonoBehaviour
     {
         grabInteractable.selectEntered.RemoveListener(OnGrabbed);
         grabInteractable.selectExited.RemoveListener(OnReleased);
+
+        StopReturning();
+        col.enabled = true;
     }
 
     private void OnGrabbed(SelectEnterEventArgs args)
     {
-        if (returnCoroutine != null)
-        {
-            StopCoroutine(returnCoroutine);
-            returnCoroutine = null;
-        }
+        StopReturning();
 
         col.enabled = true;
         rb.isKinematic = false;
@@ -62,9 +79,23 @@ public class ReturnToOriginOnRelease : MonoBehaviour
         returnCoroutine = StartCoroutine(ReturnToOriginWithDelay());
     }
 
+    private void StopReturning()
+    {
+        if (returnCoroutine != null)
+        {
+            StopCoroutine(returnCoroutine);
+            returnCoroutine = null;
+        }
+    }
+
+    private Vector3 HomePosition =>
+        home != null ? home.TransformPoint(homeLocalPosition) : homeLocalPosition;
+
+    private Quaternion HomeRotation =>
+        home != null ? home.rotation * homeLocalRotation : homeLocalRotation;
+
     private IEnumerator ReturnToOriginWithDelay()
     {
-        // Wait before starting the return
         yield return new WaitForSeconds(returnDelay);
 
         col.enabled = false;
@@ -78,18 +109,15 @@ public class ReturnToOriginOnRelease : MonoBehaviour
         while (elapsed < returnDuration)
         {
             elapsed += Time.deltaTime;
+            float t = returnCurve.Evaluate(elapsed / returnDuration);
 
-            float normalizedTime = elapsed / returnDuration;
-            float curvedTime = returnCurve.Evaluate(normalizedTime);
-
-            transform.position = Vector3.Lerp(startPos, originalPosition, curvedTime);
-            transform.rotation = Quaternion.Slerp(startRot, originalRotation, curvedTime);
+            transform.position = Vector3.Lerp(startPos, HomePosition, t);
+            transform.rotation = Quaternion.Slerp(startRot, HomeRotation, t);
 
             yield return null;
         }
 
-        transform.position = originalPosition;
-        transform.rotation = originalRotation;
+        transform.SetPositionAndRotation(HomePosition, HomeRotation);
 
         col.enabled = true;
         rb.isKinematic = false;
