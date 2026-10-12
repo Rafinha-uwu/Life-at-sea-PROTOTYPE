@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1631aef3c2aa15448a59e1c4ad0a1e5d
+timeCreated: 1485284485
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81349
+  packageName: British Naval Cannon PBR
+  packageVersion: 1.0
+  assetPath: Assets/cannon/Materials/CubemapTest.mat
+  uploadId: 162014

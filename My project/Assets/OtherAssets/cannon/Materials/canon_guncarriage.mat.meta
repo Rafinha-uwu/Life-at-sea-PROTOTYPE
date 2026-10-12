@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fec04a0f700baa74dac39e8f04df7429
+timeCreated: 1485283690
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81349
+  packageName: British Naval Cannon PBR
+  packageVersion: 1.0
+  assetPath: Assets/cannon/Materials/canon_guncarriage.mat
+  uploadId: 162014

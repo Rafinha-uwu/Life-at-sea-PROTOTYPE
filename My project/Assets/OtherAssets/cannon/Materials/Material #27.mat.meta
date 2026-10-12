@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cc822477d143fdf4481d6c18a876e313
+timeCreated: 1487017349
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81349
+  packageName: British Naval Cannon PBR
+  packageVersion: 1.0
+  assetPath: Assets/cannon/Materials/Material #27.mat
+  uploadId: 162014

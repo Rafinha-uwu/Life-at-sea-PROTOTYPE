@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eab06f6eeeedbf34092050a03179f9b7
+timeCreated: 1485285443
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81349
+  packageName: British Naval Cannon PBR
+  packageVersion: 1.0
+  assetPath: Assets/cannon/cannon_demo.unity
+  uploadId: 162014

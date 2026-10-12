@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9821e2208ca8b4b4e9dd3e52c51df227
+timeCreated: 1485285405
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81349
+  packageName: British Naval Cannon PBR
+  packageVersion: 1.0
+  assetPath: Assets/cannon/prefab/canon_low.prefab
+  uploadId: 162014
