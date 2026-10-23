@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-// Lightning for the storm cloud made by Nau/Effects/Create Storm Cloud.
+// Lightning for the storm cloud over the cannon deck.
 // Every so often the whole cloud flashes bright - twice, quickly, the way
 // lightning flickers - with an optional light and a rumble of thunder after.
 // Between flashes it does nothing at all, so it costs nothing.

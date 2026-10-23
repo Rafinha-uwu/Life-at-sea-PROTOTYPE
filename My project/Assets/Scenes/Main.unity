@@ -16223,7 +16223,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 358906138}
+    m_TransformParent: {fileID: 773850087}
     m_Modifications:
     - target: {fileID: -8680314639805405677, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalScale.z
@@ -16271,7 +16271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.78318363
+      value: 0.7831839
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalScale.y
@@ -16279,35 +16279,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.78318363
+      value: 0.7831838
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.522972
+      value: 2.2903748
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0399479
+      value: 2.8474693
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.75062704
+      value: 24.486794
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7100653
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00068760716
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70413524
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00069339835
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9916b40bfef701f4b9873d4e4ddf2d21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -43796,11 +43796,6 @@ Transform:
   - {fileID: 582125245}
   m_Father: {fileID: 1595459060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &358906138 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-  m_PrefabInstance: {fileID: 2191418627039892074}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &359085486
 GameObject:
   m_ObjectHideFlags: 0
@@ -44838,8 +44833,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d704ebe30a48540bf96738a9e3a8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
-  portuguese: Ok this is a cool lil thing used to rotate like weeeeeeey
-  english: Test info right here ok just to test it works fine bla bla
+  portuguese: "Cabrestante\nTambor rodado pelos marinheiros para levantar as \xE2ncoras."
+  english: 'Capstan
+
+    A drum turned by the sailors to haul up the anchors.'
 --- !u!1 &377592154
 GameObject:
   m_ObjectHideFlags: 0
@@ -53626,6 +53623,11 @@ PrefabInstance:
     - target: {fileID: 428104288488612099, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_Name
       value: Panel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
+      propertyPath: m_text
+      value: "Leme\nMovido por uma longa barra, a cana do leme \xE9 usada para virar
+        o navio"
       objectReference: {fileID: 0}
     - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_fontAsset
@@ -62765,13 +62767,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1969076792}
-  - {fileID: 358906138}
   - {fileID: 1628044659}
   - {fileID: 880921366}
-  - {fileID: 1169534566}
-  - {fileID: 1952824087}
   - {fileID: 1583030545}
   - {fileID: 485362729}
+  - {fileID: 1169534566}
   m_Father: {fileID: 544567014}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &604121485
@@ -82599,6 +82599,8 @@ Transform:
   - {fileID: 1178555312}
   - {fileID: 901786739}
   - {fileID: 1663688160}
+  - {fileID: 95100172}
+  - {fileID: 1347931703}
   m_Father: {fileID: 544567014}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774733193
@@ -98335,7 +98337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_text
-      value: Test info right here ok just to test it works fine bla bla
+      value: "Cabrestante\nTambor rodado pelos marinheiros para levantar as \xE2ncoras."
       objectReference: {fileID: 0}
     - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_fontAsset
@@ -105147,32 +105149,6 @@ Transform:
   - {fileID: 1663158180}
   m_Father: {fileID: 1230413833}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &968320092 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6362817357269314683, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-  m_PrefabInstance: {fileID: 1952824086}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &968320093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968320092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 330304eb9c211ee42a2f9110320c67f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FacePlayer
-  playerCamera: {fileID: 371424192410409758}
-  pivot: {fileID: 0}
-  upReference: {fileID: 0}
-  keepUpright: 1
-  turnSpeed: 0
-  bringIntoView: 0
-  lookAwayAngle: 50
-  viewDistance: 1.5
-  moveSpeed: 4
 --- !u!1 &968546212
 GameObject:
   m_ObjectHideFlags: 0
@@ -109784,11 +109760,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 208956439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1021927691 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6362817357269314683, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-  m_PrefabInstance: {fileID: 2191418627039892074}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1022586684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117410,11 +117381,6 @@ CapsuleCollider:
   m_Height: 1.7360682
   m_Direction: 1
   m_Center: {x: 0.040134978, y: 0.8759704, z: 0.12209555}
---- !u!1 &1109941196 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1623103337420515165, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-  m_PrefabInstance: {fileID: 1952824086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1110098674
 GameObject:
   m_ObjectHideFlags: 0
@@ -122320,7 +122286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_text
-      value: Colocar info aqui
+      value: "Especiarias\nPimenta, canela, cravinho e noz-moscada, trazidas da \xCDndia."
       objectReference: {fileID: 0}
     - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_fontAsset
@@ -122504,8 +122470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d704ebe30a48540bf96738a9e3a8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
-  portuguese: Colocar info aqui
-  english: Place info here
+  portuguese: "Especiarias\nPimenta, canela e noz-moscada, trazidas da \xCDndia."
+  english: 'Spices
+
+    Pepper, cinnamon and nutmeg, brought from India.'
 --- !u!114 &1169534571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140708,11 +140676,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1952824087}
+    m_TransformParent: {fileID: 773850087}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8.636277
+      value: 8.636276
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalScale.y
@@ -140720,35 +140688,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalScale.z
-      value: 8.636278
+      value: 8.636277
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2457709
+      value: 4.314001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0714698
+      value: -1.0279999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.023097754
+      value: 22.996002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.077952854
+      value: 0.6946773
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.03126315
+      value: -0.035416357
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.992126
+      value: -0.71261084
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0929083
+      value: -0.0914058
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c22bc26e811d9444bb8c54595c86631, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -152694,10 +152662,10 @@ RectTransform:
   m_LocalScale: {x: 0.00497323, y: 0.00497323, z: 0.00497323}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1307272153}
   - {fileID: 337831319}
   - {fileID: 1003527438}
   - {fileID: 838250623}
+  - {fileID: 1307272153}
   m_Father: {fileID: 1969076792}
   m_LocalEulerAnglesHint: {x: 0, y: 2.03, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -159939,6 +159907,11 @@ PrefabInstance:
       value: Panel (3)
       objectReference: {fileID: 0}
     - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
+      propertyPath: m_text
+      value: "Comida dos Marinheiros\nBiscoito duro, vinho, \xE1gua e carne ou peixe
+        salgados."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: a1af79a51121c2043802986179ac5394, type: 2}
@@ -160096,8 +160069,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d704ebe30a48540bf96738a9e3a8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
-  portuguese: Colocar info aqui
-  english: Place info here
+  portuguese: "Comida dos Marinheiros\nBiscoito duro, vinho, \xE1gua e carne ou peixe
+    salgados."
+  english: 'Sailors'' Food
+
+    Hard biscuit, wine, water and salted meat or fish.'
 --- !u!114 &1583030550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162240,25 +162216,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608087911}
   m_Mesh: {fileID: -7387706064836869012, guid: 2e9a5419406e4cc4092d615d1d162a57, type: 3}
---- !u!1 &1609142712 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3448896012629992066, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-  m_PrefabInstance: {fileID: 1952824086}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1609142716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609142712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08d704ebe30a48540bf96738a9e3a8fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
-  portuguese: Colocar info aqui
-  english: Place info here
 --- !u!1 &1609172749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6737508060696186516, guid: e9db4495bdb7e2d4bb847af0d0bef605, type: 3}
@@ -163963,7 +163920,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_text
-      value: Place Info here
+      value: "C\xE2mara do Capit\xE3o\nNa popa, o melhor lugar da nau. Aqui dormia
+        e trabalhava o capit\xE3o."
       objectReference: {fileID: 0}
     - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
       propertyPath: m_fontAsset
@@ -164136,8 +164094,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d704ebe30a48540bf96738a9e3a8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
-  portuguese: Colocar info aqui
-  english: Place info here
+  portuguese: "C\xE2mara do Capit\xE3o\nNa popa, o melhor lugar da nau. Aqui dormia
+    e trabalhava o capit\xE3o."
+  english: 'Captain''s Quarters
+
+    At the stern, the best spot aboard. The captain
+    slept and worked here.'
 --- !u!1 &1629979323
 GameObject:
   m_ObjectHideFlags: 0
@@ -176035,11 +175997,6 @@ Transform:
   - {fileID: 1455564323}
   m_Father: {fileID: 440546259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1740295595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1623103337420515165, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-  m_PrefabInstance: {fileID: 2191418627039892074}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1740476260
 GameObject:
   m_ObjectHideFlags: 0
@@ -190592,25 +190549,6 @@ Transform:
   - {fileID: 903898122}
   m_Father: {fileID: 853740735}
   m_LocalEulerAnglesHint: {x: -2.6416628, y: 2.0100198, z: 3.0041752}
---- !u!1 &1844789688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3448896012629992066, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-  m_PrefabInstance: {fileID: 2191418627039892074}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1844789692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844789688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08d704ebe30a48540bf96738a9e3a8fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
-  portuguese: '. . . '
-  english: '. . . '
 --- !u!1 &1844811605
 GameObject:
   m_ObjectHideFlags: 0
@@ -198632,149 +198570,6 @@ Transform:
   - {fileID: 307560740}
   m_Father: {fileID: 424774787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1952824086
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 604121484}
-    m_Modifications:
-    - target: {fileID: 428104288488612099, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_Name
-      value: Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: a1af79a51121c2043802986179ac5394, type: 2}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.22745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.22745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.22745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 5522630355476918031, guid: a1af79a51121c2043802986179ac5394, type: 2}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4282006074
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.635
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.886
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.768537
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.6398055
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 349.555
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457737921198682955, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 1109941196}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: objectToTint
-      value: 
-      objectReference: {fileID: 1564347026}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: playerCamera
-      value: 
-      objectReference: {fileID: 371424192410409758}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: worldSpaceUI
-      value: 
-      objectReference: {fileID: 968320092}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightTint.a
-      value: 0.60784316
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightTint.b
-      value: 0.7924528
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightTint.g
-      value: 0.33274868
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightTint.r
-      value: 0.07226763
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: pointTargets.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: 'pointTargets.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1564347027}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 1347931703}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6362817357269314683, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 968320093}
-    - targetCorrespondingSourceObject: {fileID: 3448896012629992066, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1609142716}
-  m_SourcePrefab: {fileID: 100100000, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
---- !u!4 &1952824087 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-  m_PrefabInstance: {fileID: 1952824086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1953504715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -201515,8 +201310,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d704ebe30a48540bf96738a9e3a8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
-  portuguese: Colocar info aqui
-  english: Place info here
+  portuguese: "Leme\nMovido por uma longa barra, a cana do leme \xE9 usada para virar
+    o navio"
+  english: 'Helm
+
+    Turned with a long bar, the tiller was used to steer the ship.'
 --- !u!1 &1986721844
 GameObject:
   m_ObjectHideFlags: 0
@@ -225037,161 +224835,6 @@ Transform:
   - {fileID: 7319745171985841457}
   m_Father: {fileID: 6184804343077462081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2191418627039892074
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 604121484}
-    m_Modifications:
-    - target: {fileID: 428104288488612099, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_Name
-      value: Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_text
-      value: '. . . '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: a1af79a51121c2043802986179ac5394, type: 2}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.22745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.22745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.22745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 5522630355476918031, guid: a1af79a51121c2043802986179ac5394, type: 2}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4282006074
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650917631027628019, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2671169810517708775, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 371424192410409755}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.974
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.738779
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.258
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7100653
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00068760716
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.70413524
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00069339835
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 270.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.112
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457737921198682955, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 1740295595}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: objectToTint
-      value: 
-      objectReference: {fileID: 676097647}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: playerCamera
-      value: 
-      objectReference: {fileID: 371424192410409758}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: worldSpaceUI
-      value: 
-      objectReference: {fileID: 1021927691}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightRoot
-      value: 
-      objectReference: {fileID: 676097647}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: outlineToShow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightObject
-      value: 
-      objectReference: {fileID: 676097647}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightTint.a
-      value: 0.60784316
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightTint.b
-      value: 0.7924528
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightTint.g
-      value: 0.33274868
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: highlightTint.r
-      value: 0.07226763
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: pointTargets.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808256520531702295, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      propertyPath: 'pointTargets.Array.data[0]'
-      value: 
-      objectReference: {fileID: 676097651}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6867610738925801045, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 95100172}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3448896012629992066, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1844789692}
-  m_SourcePrefab: {fileID: 100100000, guid: 7d1f7a7e5359d224e9c3cba7ba1b0953, type: 3}
 --- !u!1 &2194387721285963269
 GameObject:
   m_ObjectHideFlags: 0

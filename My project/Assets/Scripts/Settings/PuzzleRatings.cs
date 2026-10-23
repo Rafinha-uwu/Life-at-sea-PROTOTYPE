@@ -4,7 +4,6 @@ using UnityEngine;
 // The one place the star colours and the per-puzzle times live. An asset
 // rather than a scene component, so every star on every page reads the same
 // numbers and tuning them never touches the 7 MB scene.
-[CreateAssetMenu(fileName = "PuzzleRatings", menuName = "Nau/Puzzle Ratings")]
 public class PuzzleRatings : ScriptableObject
 {
     [Serializable]
